@@ -52,3 +52,7 @@ Mkfile.old
 dkms.conf
 
 .vscode
+*.html
+*.js
+*.wasm
+json-c/
