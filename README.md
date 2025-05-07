@@ -15,6 +15,7 @@ UI로 들가서 emsdk 가설치된 경로 기입
 ```bash
 emcc hello.c -o hello.html
 ```
+
 # 실행해보기
 ```bash
 python3 -m http.server 9000
