@@ -15,7 +15,13 @@ UI로 들가서 emsdk 가설치된 경로 기입
 
 # 컴파일 방법
 ```bash
-emcc hello.c -o hello.html
+emcc process_image.c -o process_image.js \
+-s WASM=1 \
+-s EXPORTED_FUNCTIONS='["_processImage", "_malloc", "_free"]' \
+-s EXPORTED_RUNTIME_METHODS='["HEAPU8"]' \
+-s ALLOW_MEMORY_GROWTH=1 \
+-O3 # 최적화 플래그 추가
+
 ```
 # 실행해보기
 ```bash
